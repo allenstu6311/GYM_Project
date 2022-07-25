@@ -1,0 +1,1163 @@
+*{
+    box-sizing: border-box;
+}
+.menu{
+width: 100%;
+display: flex;
+background-color: #FABB1A;
+position: relative;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 8;  
+
+}
+.nav{
+text-align: center;
+width: 100%;
+display: flex;
+justify-content: flex-end; 
+transition: .5s;
+}
+.nav li a{
+width: 140px;
+padding: 10px;
+text-decoration: none;
+color: aliceblue;
+font-size: 20px;
+display: block;
+font-weight: 900;
+
+}
+
+.nav li{
+position: relative;
+}
+.nav li:hover >a{
+background-color: rgb(140, 14, 14);
+}
+.nav .information{
+width: 160px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+text-align: center; 
+
+}
+.nav li:hover .information{
+display: block;
+}
+.information li a{
+display: block; 
+
+}
+.nav .coach{
+width: 160px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .coach{
+display: block;
+}
+.nav .article{
+width: 160px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .article{
+display: block;
+}
+.nav .free{
+width: 160px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .free{
+display: block;
+}
+.nav .problem{
+width: 160px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .problem{
+display: block;
+}
+.logo-pic{
+text-align: center;
+width: 160px;
+height: 110px;
+background-color: rgb(238, 238, 238);
+position: absolute;
+top: 0;
+right: 80%;
+z-index: 10;
+position: fixed;
+
+
+}
+.logo-pic img{
+padding-bottom: 20px;
+}
+.logo-pic::before{
+content: "";
+width: 0;
+height: 0;
+border-bottom:30px solid transparent;
+border-right: 80px solid rgb(238, 238, 238);
+border-left:80px solid rgb(238, 238, 238);
+position: absolute;
+bottom: 0;
+left: 0;
+transform: translateY(100%);
+} 
+.lab{
+display: none;
+}
+/* ===========================================選單 */
+
+.slide-container{
+    height: 100vh;
+    display: flex;
+    width:100%;
+    /* height: 800px; */
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.slide-container img{
+    width: 100%;
+    height: 100%;
+}
+.slide-card{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none; 
+    transition: .1s;
+}
+/* .card-2{
+    left: 100%;
+}
+.card-3{
+   left: 200%;
+} */
+input[type="radio"]{
+    z-index: 10;
+    display: none;
+}   
+ .control{
+    position: absolute;
+    left: 45%;
+    bottom:10px;
+    /* display: none; */
+}
+.control label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:aliceblue;
+    z-index: 10;
+    margin: 0 5px;
+    border: 2px solid aliceblue;
+    display: none;
+
+} 
+.slide-container input[type="radio"]:nth-of-type(1):checked~.control label:nth-of-type(1){
+    background-color: red;
+}
+.slide-container input[type="radio"]:nth-of-type(2):checked~.control label:nth-of-type(2){
+    background-color: red;
+}
+.slide-container input[type="radio"]:nth-of-type(3):checked~.control label:nth-of-type(3){
+    background-color: red;
+}
+
+
+/* .slide-container input[type="radio"]:nth-of-type(1):checked~.slide-card:nth-of-type(1){
+    transform: translateX(0);
+} */
+/* .slide-container input[type="radio"]:nth-of-type(2):checked~.slide-card:nth-of-type(2){
+    transform: translateX(-100%);
+}
+.slide-container input[type="radio"]:nth-of-type(3):checked~.slide-card:nth-of-type(3){
+    transform: translateX(-200%);
+} */
+
+
+
+/* <!-- ========================================滑動視窗 --> */
+.us-total{
+    background-image: linear-gradient(180deg,rgb(183, 181, 181),rgb(211, 211, 211),white);
+    position: relative;
+    margin-bottom: 100px;
+    
+}
+.us{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.us-pic{
+    width: 600px;
+    padding: 30px 0;
+}
+.us-pic img{
+    width: 90%;
+}
+.us-txt{
+    width: 500px;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: space-around;
+}
+.us-title{
+    display: flex;
+    justify-content: flex-start;
+}
+.us-txt h2{
+    font-size: 30px;
+    font-weight: 900;
+    padding:20px 0;
+   
+}
+.us-txt p{
+    font-size: 18px;
+    line-height: 2;
+}
+.us-btn{
+    display:flex;
+    width: 300px;
+    justify-content: center; 
+   
+}
+.us-btn a{
+    border: 5px double rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: crimson;
+    color: #fbfbfb;
+    display: block;
+    padding: 10px 50px;
+    
+}
+
+/* ==============================關於我們 */
+.student-total{
+    margin-bottom: 200px;  
+}
+.student{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.student-item{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+   
+  
+}
+.student-pic{
+    width: 550px;
+    padding: 20px;
+    padding-top: 70px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.student-item img{
+    width: 100%;
+}  
+.student-txt{
+    padding: 60px 0;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.student-title{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+    margin-bottom: 50px;
+}
+.student-txt h2{
+    font-size: 30px;
+    font-weight: 900;
+    
+}
+.student-txt p{
+    font-size: 18px;
+    line-height: 2;
+}
+.student-bth{
+    width: 300px;
+    margin: 10px 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.student-bth a{
+    border: 5px double rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: crimson;
+    color: #fbfbfb;
+    display: block;
+    padding: 10px 50px;
+   
+}
+.order{
+    position:absolute;
+    top:90%;
+    left:40%;
+    z-index: 10;
+}
+.order label{
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    display: inline-block;
+}
+.student-pic-2{
+    left: 100.5%;
+}
+.student-pic-3{
+    left: 199.6%;
+}
+.student-item input[type="radio"]:nth-of-type(1):checked~.student-pic:nth-of-type(1){
+    transform: translateX(0);
+}
+.student-item input[type="radio"]:nth-of-type(2):checked~.student-pic:nth-of-type(2){
+    transform: translateX(-102%);
+}
+.student-item input[type="radio"]:nth-of-type(3):checked~.student-pic:nth-of-type(3){
+    transform: translateX(-203%);
+}
+
+.student-item input[type="radio"]:nth-of-type(1):checked~.order label:nth-of-type(1){
+    background-color: red
+}
+.student-item input[type="radio"]:nth-of-type(2):checked~.order label:nth-of-type(2){
+    background-color: red
+}
+.student-item input[type="radio"]:nth-of-type(3):checked~.order label:nth-of-type(3){
+    background-color: red
+}
+
+/* 
+<!-- 
+==============================學員成果 --> */
+.class-total{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 60px;
+}
+.line{
+    width: 100px;
+    height: 3px;
+    background-color: #090909;
+}
+.class-title{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -130px;
+    left: 37%;  
+}
+.class-title h2{
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px;
+}
+.class-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 130px;
+
+ }
+ .class-card{
+    width: 33%;
+    margin: 0 10px;
+    padding:0px 20px;
+    border: 3px solid rgb(74, 73, 73);
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    transform: translateY(0);
+    transition: .5s;
+    text-align: left;
+ }
+ .class-card-first{
+    text-align: center;
+ }
+ .class-card:hover{
+    transform: translateY(-5%);
+ }
+ .class-card:before{
+    content: "";
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    border-left: 3px  solid rgb(74, 73, 73);
+    border-top: 3px solid rgb(74, 73, 73);
+    border-right: 3px solid rgb(74, 73, 73);
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    top:-127px;
+    left:25%;
+    background-color: white;
+    z-index: 3;
+    transform: rotate(0deg); 
+    
+ }
+
+ .class-card h3{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 10;
+    margin-top: 20px;
+    position: relative;
+    
+ }
+ .class-card p{
+    line-height: 1.5;
+    font-size: 18px;
+ }
+
+ .class-pic img{
+    width: 104px;
+    position: absolute;
+    top: -110px;
+    left: 32%;
+    z-index: 9;
+ }
+
+/* ==============================課程介紹  */
+
+.chat-total{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+.chat-title{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    left: 34%;
+    font-size: 40px;
+    padding: 50px 0;
+    font-weight: 900;
+}
+.chat-title h2{
+    padding: 10px;
+}
+
+.chat{
+    width: 350px;
+    box-shadow: 0 0 10px gray;
+    padding: 20px;
+    background-color: rgb(80, 182, 223);
+    margin: 10px;
+    border-radius: 10px ;
+    margin-top: 150px;
+  
+}
+.user{
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.user-man{
+    display: flex;
+    justify-content: flex-end;
+}
+.pic{
+    width: 60px; 
+}
+.user .pic{
+    border-radius: 50%;
+    overflow: hidden;
+ 
+}
+.avatar .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.user .txt{
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+    position: relative;
+    transform: translateY(-20%);
+   
+    
+}
+.user-woman .txt{
+    margin-left: 20px;
+    margin-right: 80px;
+    background-color: white;
+    color: black;
+}
+.user-woman .txt::before{
+    content: "";
+    width: 50px;
+    height: 15px;
+    /* border-bottom: 15px solid gray; */
+    border-left: 11px solid white;
+    border-radius: 140px 0 0 0;
+    transform: rotate(280deg);
+    position: absolute;
+    left: -24px;
+    top: -60%;
+   
+}
+.user-man .txt{
+    margin-right: 20px;
+    margin-left: 80px;
+    order: -1;
+    background-color: greenyellow;
+    color: black  
+}
+.user-man .txt::after{
+   content: "";
+   width: 13px;
+   height: 10px;
+   border-bottom: 11px solid greenyellow;
+   border-radius: 0 0 140px 0;
+   position: absolute;
+   top: -20%;
+   right: -5px;
+   transform: rotate(330deg);
+   
+}
+
+/* ===================================學員回饋 */
+.map-total{
+   
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+}
+.map-title{
+    display: flex;
+    
+}
+.map{
+    padding: 80px;
+}
+.map-txt{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.map-title h2{
+    font-size: 35px;
+    font-weight: 900;
+    padding: 15px 0;
+}
+.map-post{
+    width: 100%;
+    min-width: 300px;
+}
+.map-post p{
+ 
+    font-size: 20px;
+    line-height: 1.5;
+}
+.map-pic{
+    width: 100%;
+    max-width: 500px;
+    max-width: 100px;
+    padding: 20px 0;
+}
+.map-pic img{
+    width: 100%;
+}
+
+/* <!-- ========================================地圖 -->  */
+
+
+.footer-total{
+    display: flex;
+    
+    background-color: black;
+}
+.footer{
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: aliceblue;
+    padding: 20px;
+    margin: auto;
+}
+.footer .footer-pic{
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+}
+.footer .footer-about{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-about ul{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.footer-about li{
+    display: inline-block;
+    margin: 10px 0;
+}
+.footer-about ul{
+    text-align: center;
+}
+.footer-about ul p{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+    margin: 10px;
+}
+.footer-about ul a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+.footer-about ul a:hover{
+    color: red;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color:#FABB1A; 
+    flex-direction: column;
+    padding-top: 20px;
+}
+/* <!-- ========================================關於我們 -->  */
+.app{
+    border-top: 2px solid white;
+    background-color: black;
+}
+.app-pic img{
+    margin: 5px 10px;
+}
+.app-adress{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+/* <!-- ========================================連結 -->  */
+
+.copy{
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 80px 0;
+    color: aliceblue;  
+    font-size: 20px;
+}
+/* ========================================copy-rigtt -->    */
+.advertise{
+    width: 40px;
+    /* background-color: black; */
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 10;
+    padding: 10px 5px;
+    
+}
+.advertise img{
+   margin: 10px 0;  
+}
+/* <!-- 
+========================================ig fb line -->  */
+
+.notice{
+    background-color: orange;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+   
+}
+
+.notice-list{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.notice li{
+    display: inline; 
+    overflow: hidden;
+}
+.notice li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: aliceblue;
+    padding: 20px;
+    display: block;   
+   
+}
+.notice li a:hover{
+    background-color: rgb(118, 12, 12);
+    transform: scale(1.2,1.2);
+}
+/* <!-- 
+========================================底層廣告 -->  */
+
+.cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(3, 3, 36, 0.7);
+    z-index: 9; 
+}
+.cover-total{
+    width: 1400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cover-theme{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 10;
+}
+.cover-theme .theme-sale{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: #fbfbfb;
+    font-size: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  
+}
+
+.cover-post{    
+    z-index: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cover-post .post-content p{
+    color: aliceblue;
+    font-size: 20px;
+    margin: 30px;
+}
+.post-content-title{
+    text-align: center;
+    font-size: 35px;
+    color: #fbfbfb;
+}
+@media screen and (max-width:1024px) {
+    .footer{
+      flex-direction: column;
+    }
+    .footer .footer-about{
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .footer .footer-about nav li{
+        width: 200px;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-about ul p{
+        font-size: 20px;
+        font-weight: 900;
+        padding: 5px;
+        margin: 0px;
+    }
+    #int-list:checked~.menu-total .nav{
+        left: 0;
+   }
+   #int-list{
+    display: none;
+   }
+    .menu{
+        width: 100%;
+        display: flex;
+        background-color: #FABB1A;
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8;  
+        justify-content: flex-end;
+        
+    }
+    .lab{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        margin: 10px 20px;
+        position: relative;
+        display: block;
+   }
+    .lab::before{
+        content: "";
+        width: 36px;
+        height: 3px;
+        position: absolute;
+        background-color: aliceblue;
+        top: 45%;
+        left: 15%;
+        box-shadow: 0px 13px 0px aliceblue,
+                     0px -13px 0px aliceblue;
+    }
+    .nav{
+        background-color: black;
+        position:fixed;
+        left: -100%;
+        top: 9.5%;
+        height: 100vh;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        padding: 0;  
+    }
+    .nav li{
+        padding: 0;
+        margin: 0;
+    }
+    .nav li:last-child{
+        margin-bottom: 50px;
+    }
+    .nav li a{
+        width: 300px;
+        padding: 20px 0;
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 20px;
+        display: block;
+        font-weight: 900;
+        margin: 0px 0;
+        border-bottom: 1px solid aliceblue
+
+    
+    }
+    .nav .information{
+        width: 130px;
+        position: absolute;
+        top: 0px;
+        right: -60%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .information::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .information li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .information a{
+        padding: 20px;
+        margin: 0;
+    }
+    .nav .coach{
+        width: 130px;
+        position: absolute;
+        top: 0px;
+        right: -60%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .coach::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .coach li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .coach a{
+        padding: 20px;
+        margin: 0;
+    }
+
+    .nav .article{
+        width: 160px;
+        position: absolute;
+        top: 0px;
+        right: -70%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .article::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .article li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .article a{
+        padding: 20px;
+        margin: 0;
+    }
+    .nav .problem{
+        width: 130px;
+        position: absolute;
+        top: 0px;
+        right: -60%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .problem::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .problem li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .problem a{
+        padding: 20px;
+        margin: 0;
+    }
+    .timeline-total{
+        margin-top: 60px;
+    }
+
+    .notice{
+    display: none;
+    }
+    .us{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .us-btn{
+        width: 100%;
+        text-align: center;
+        margin: 40px 0;
+    }
+    .student{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .student-pic{
+        width: 550px;
+        padding: 20px;
+        margin: 0;
+        position: relative; 
+    }
+    .order{
+        position:absolute;
+        top:90%;
+        left:40%;
+        z-index: 10;
+    }
+    .student-item{
+        height: 50vh;
+    }
+    .student-bth{
+        width: 100%;
+        text-align: center;
+        margin: 40px 0;
+    }
+    .class-title{
+        left: 20%;
+    }
+    .class-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .class-card{
+        width: 65%;
+        margin-bottom: 150px;
+    }
+    .chat-title{
+        left: 20%;
+    }
+    .chat-total{
+        display: flex;
+        
+        align-items: center;
+    }
+    .chat:nth-child(2){
+        display: none;
+    }
+    .map-total{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .map{
+        margin: 0;
+        padding: 0;
+    }
+    .map-txt{
+        width: 1000px;
+        display: flex;
+
+        margin: 0;
+        padding: 0;
+        
+    }
+    .map-txt{
+        margin: 10px;
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: row;
+    }
+    .map-title{
+        width: 80%;
+    }
+        
+  }
+  
+
+/* <!-- 
+========================================ig fb line -->  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,805 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+width: 100%;
+display: flex;
+background-color: #FABB1A;
+position: relative;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 8;  
+
+}
+.nav{
+text-align: center;
+width: 100%;
+display: flex;
+justify-content: flex-end; 
+transition: .5s;
+}
+.nav li a{
+width: 140px;
+padding: 10px;
+text-decoration: none;
+color: aliceblue;
+font-size: 20px;
+display: block;
+font-weight: 900;
+
+}
+
+.nav li{
+position: relative;
+}
+.nav li:hover >a{
+background-color: rgb(140, 14, 14);
+}
+.nav .information{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+text-align: center; 
+
+}
+.nav li:hover .information{
+display: block;
+}
+.information li a{
+display: block; 
+
+}
+.nav .coach{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .coach{
+display: block;
+}
+.nav .article{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .article{
+display: block;
+}
+.nav .free{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .free{
+display: block;
+}
+.nav .problem{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .problem{
+display: block;
+}
+.logo-pic{
+text-align: center;
+width: 160px;
+height: 110px;
+background-color: rgb(238, 238, 238);
+position: absolute;
+top: 0;
+right: 80%;
+z-index: 10;
+position: fixed;
+
+
+}
+.logo-pic img{
+padding-bottom: 20px;
+}
+.logo-pic::before{
+content: "";
+width: 0;
+height: 0;
+border-bottom:30px solid transparent;
+border-right: 80px solid rgb(238, 238, 238);
+border-left:80px solid rgb(238, 238, 238);
+position: absolute;
+bottom: 0;
+left: 0;
+transform: translateY(100%);
+} 
+.lab{
+display: none;
+}
+/* ===========================================選單 */
+.tdee-title{
+    width:100%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    margin-bottom: 60px;
+}
+
+.tdee-title h1{
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 900;
+    color: aliceblue;
+}
+.tdee-top{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 40px;
+}
+.tdee-computer{
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    border: 2px solid orange;
+    background-color: bisque;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+.tdee-computer h2{
+    margin: 0;
+    padding: 0;
+    color: brown;
+    font-size: 25px;
+}
+.tdee-computer form div{
+    display: flex;
+    flex-direction: column;
+}
+form #gender{
+    width: 100px;
+    margin: 5px;    
+}
+.tdee-computer input{
+    width: 200px;
+    padding: 3px;
+    margin: 5px;
+}
+.tdee-computer #time{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* ===========================================運動量 */
+.tdee-total{
+    margin-top: 20px;
+}
+.tdee-activity{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 30px;
+
+}
+.activity-card{
+    width: 200px;
+    margin: 10px;
+    border: 2px solid orange;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+.activity-pic{
+    margin: auto;
+    width: 100px;
+    padding: 10px;
+}
+.activity-pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.activity-txt{
+    text-align: center;
+    padding: 10px; 
+ }
+ .tdee-computer-bth input{
+    background-color: red;
+    color: aliceblue;
+    font-weight: 900;
+ }
+
+
+/* =======================================飲食       */
+.tdee-diet{
+    width: 1200px;
+    margin: auto;
+    border: 2px solid orange;
+    background-color: bisque;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 100px;
+   
+}
+.diet-sheet form{
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"], 
+input[type="button"]{
+    border: none;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 5px gray;
+    
+    
+}
+.diet-sheet input[type="button"]{
+   margin: 20px 0;
+   font-weight: 900;
+   background-color: red;
+   color: aliceblue;
+}
+#measurement{
+    padding:14px;
+}
+.diet-title{
+    margin-top: 10px;
+}
+table td{
+    padding: 10px 20px;
+    background-color: white;
+    
+}
+#measurement{
+    height: 17px;
+}
+table{
+    border: 1px solid orange;
+}
+.diet-post{
+    width: 400px;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    right: 7%;
+    top: 50%;
+}
+/* <!-- ======================================================廣告 */
+.teach-eat-all{
+    background-color: rgb(247, 198, 107);
+}
+.teach-title{
+    padding: 30px;
+    text-align: center; 
+}
+.teach-title h2{
+    color: aliceblue;
+    font-size: 40px;
+}
+.teach-eat{
+    width: 1200px;
+    margin: auto;   
+}
+.eat-card{
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.eat-card-1{
+    justify-content: flex-start;
+}
+.eat-card-2{
+    justify-content: flex-end;
+    text-align: right;
+}
+.eat-card-2 .eat-txt-title{
+    display: flex;
+    justify-content: flex-end;
+}
+.eat-txt{
+    width: 450px;
+    background-color: rgb(89, 88, 88);
+    color: aliceblue;
+    padding: 10px;
+    z-index: 3;
+    transform: translateX(0);
+    transition: .5s;
+}
+.eat-txt:nth-child(1):hover{
+    transform: translateX(10%);
+}
+.eat-txt:nth-child(2):hover{
+    transform: translateX(-10%);
+}
+.eat-txt-post{
+    width:450px;
+    padding: 5px 20px;
+}
+.eat-txt-title{
+    display: flex;
+    justify-content:flex-start;
+    position: relative;
+    padding: 5px 20px;
+    
+}
+.eat-card-1 .eat-txt-title::after{
+    content: "";
+    width: 470px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 20%;
+}
+
+.eat-card-2 .eat-txt-title::after{
+    content: "";
+    width: 470px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 20%;
+}
+.eat-txt h3{
+    font-size: 70px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-weight: 900;
+    
+}
+.eat-txt p{
+    font-size: 20px;
+    line-height: 2;
+    flex-grow: 1;
+}
+.eat-pic{
+    width: 800px;
+    object-fit: cover;
+}
+.eat-pic img{
+    width: 100%;
+}
+.eat-card>:first-child{
+    margin-right:-10%;
+}
+.eat-bth{
+    margin-top: 20px;
+    padding: 20px;
+}
+.eat-bth a{
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    transition: .5s;
+    
+}
+.eat-bth a:hover{
+    color: red;
+    border: 1px solid red;
+}
+.eat-article{
+    display: none;
+}
+
+/* ==========================footer */
+.footer-total{
+display: flex;
+
+background-color: black;
+}
+.footer{
+width: 100%;
+max-width: 1200px;
+justify-content: space-between;
+align-items: center;
+display: flex;
+color: aliceblue;
+padding: 20px;
+margin: auto;
+}
+.footer .footer-pic{
+display: flex;
+justify-content: flex-start;
+width: 300px;
+}
+.footer .footer-about{
+width: 100%;
+max-width: 1000px;
+display: flex;
+justify-content: flex-end;
+}
+.footer-about ul{
+display: flex;
+flex-direction: column;
+
+}
+
+.footer-about li{
+display: inline-block;
+margin: 10px 0;
+}
+.footer-about ul{
+text-align: center;
+}
+.footer-about ul p{
+font-size: 20px;
+font-weight: 900;
+padding: 10px;
+margin: 10px;
+}
+.footer-about ul a{
+text-decoration: none;
+color: aliceblue;
+margin: 0;
+padding: 0;
+}
+.footer-about ul a:hover{
+color: red;
+}
+.app{
+display: flex;
+justify-content: center;
+text-align: center;
+background-color:#FABB1A; 
+flex-direction: column;
+padding-top: 20px;
+}
+/* <!-- ========================================關於我們 -->  */
+.app{
+border-top: 2px solid white;
+background-color: black;
+}
+.app-pic img{
+margin: 5px 10px;
+}
+.app-adress{
+color: black;
+display: flex;
+justify-content: center;
+}
+/* <!-- ========================================連結 -->  */
+
+.copy{
+background-color:black;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px 0 80px 0;
+color: aliceblue;  
+font-size: 20px;
+}
+/* ========================================copy-rigtt -->    */
+.advertise{
+width: 40px;
+/* background-color: black; */
+position: fixed;
+right: 0;
+top: 50%;
+z-index: 10;
+padding: 10px 5px;
+
+}
+.advertise img{
+margin: 10px 0;  
+}
+@media screen and (max-width:1024px) {
+    .footer{
+      flex-direction: column;
+    }
+    .footer .footer-about{
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .footer .footer-about nav li{
+        width: 200px;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-about ul p{
+        font-size: 20px;
+        font-weight: 900;
+        padding: 5px;
+        margin: 0px;
+    }
+    #int-list:checked~.menu-total .nav{
+        left: 0;
+   }
+   #int-list{
+    display: none;
+   }
+    .menu{
+        width: 100%;
+        display: flex;
+        background-color: #FABB1A;
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8;  
+        justify-content: flex-end;
+        
+    }
+    .lab{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        margin: 10px 20px;
+        position: relative;
+        display: block;
+   }
+    .lab::before{
+        content: "";
+        width: 36px;
+        height: 3px;
+        position: absolute;
+        background-color: aliceblue;
+        top: 45%;
+        left: 15%;
+        box-shadow: 0px 13px 0px aliceblue,
+                     0px -13px 0px aliceblue;
+    }
+    .nav{
+        background-color: black;
+        position:fixed;
+        left: -100%;
+        top: 9.5%;
+        height: 100vh;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        padding: 0;  
+    }
+    .nav li{
+        padding: 0;
+        margin: 0;
+    }
+    .nav li:last-child{
+        margin-bottom: 50px;
+    }
+    .nav li a{
+        width: 300px;
+        padding: 20px 0;
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 20px;
+        display: block;
+        font-weight: 900;
+        margin: 0px 0;
+        border-bottom: 1px solid aliceblue
+
+    
+    }
+    .nav .information{
+        width: 130px;
+        position: absolute;
+        top: 0px;
+        right: -60%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .information::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .information li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .information a{
+        padding: 20px;
+        margin: 0;
+    }
+    .nav .coach{
+        width: 130px;
+        position: absolute;
+        top: 0px;
+        right: -60%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .coach::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .coach li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .coach a{
+        padding: 20px;
+        margin: 0;
+    }
+
+    .nav .article{
+        width: 160px;
+        position: absolute;
+        top: 0px;
+        right: -70%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .article::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .article li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .article a{
+        padding: 20px;
+        margin: 0;
+    }
+    .nav .problem{
+        width: 130px;
+        position: absolute;
+        top: 0px;
+        right: -60%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .problem::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .problem li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .problem a{
+        padding: 20px;
+        margin: 0;
+    }
+    .tdee-activity{
+       display: none;
+    }
+    .tdee-total{
+        margin-top: 60px; 
+    }
+    .tdee-top{
+        padding: 10px;
+    }
+    .tdee-diet{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .diet-post{
+        width: 250px;
+        top: -100%;
+        right: 0;
+    }
+    .eat-txt{
+      display: none;
+    }
+    .teach-eat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .eat-card{
+        width: 700px;
+        display: block;
+        margin: 20px 0;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .eat-card img{
+        width: 100%;
+    }
+    .eat-card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .eat-article{
+        width: 600px;
+       display: block;
+        color: aliceblue;
+
+    }
+    .eat-article p{
+        line-height: 2;
+        padding: 10px;
+        font-size: 30px;
+    }
+    .eat-pic{
+        width: 600px;
+    }
+    .eat-card>:first-child{
+        margin-right:0%;
+    }
+   
+    
+   
+  }
+ 
+/* <!-- 
+========================================ig fb line -->  */
+/* <!-- 
+========================================ig fb line -->  */

@@ -1,0 +1,578 @@
+
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+width: 100%;
+display: flex;
+background-color: #FABB1A;
+position: relative;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 8;  
+
+}
+.nav{
+text-align: center;
+width: 100%;
+display: flex;
+justify-content: flex-end; 
+transition: .5s;
+}
+.nav li a{
+width: 140px;
+padding: 10px;
+text-decoration: none;
+color: aliceblue;
+font-size: 20px;
+display: block;
+font-weight: 900;
+
+}
+
+.nav li{
+position: relative;
+}
+.nav li:hover >a{
+background-color: rgb(140, 14, 14);
+}
+.nav .information{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+text-align: center; 
+
+}
+.nav li:hover .information{
+display: block;
+}
+.information li a{
+display: block; 
+
+}
+.nav .coach{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .coach{
+display: block;
+}
+.nav .article{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .article{
+display: block;
+}
+.nav .free{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .free{
+display: block;
+}
+.nav .problem{
+width: 140px;
+position: absolute;
+top: 100%;
+background-color: #090909;
+display: none;
+
+}
+.nav li:hover .problem{
+display: block;
+}
+.logo-pic{
+text-align: center;
+width: 160px;
+height: 110px;
+background-color: rgb(238, 238, 238);
+position: absolute;
+top: 0;
+right: 80%;
+z-index: 10;
+position: fixed;
+
+
+}
+.logo-pic img{
+padding-bottom: 20px;
+}
+.logo-pic::before{
+content: "";
+width: 0;
+height: 0;
+border-bottom:30px solid transparent;
+border-right: 80px solid rgb(238, 238, 238);
+border-left:80px solid rgb(238, 238, 238);
+position: absolute;
+bottom: 0;
+left: 0;
+transform: translateY(100%);
+} 
+.lab{
+display: none;
+}
+
+.advertise{
+width: 40px;
+/* background-color: black; */
+position: fixed;
+right: 0;
+top: 50%;
+z-index: 10;
+padding: 10px 5px;
+
+}
+.advertise img{
+margin: 10px 0;  
+}
+/* <!-- 
+========================================ig fb line -->  */
+.achievement-total{
+    margin-top: 20px;
+}
+.achievement-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width:100%; */
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: brown;
+    box-sizing: border-box;
+}
+.achievement-title h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: aliceblue;
+}
+.achievement{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 140px;
+    animation: move 1s;
+}
+@keyframes move{
+    from{transform: rotate(45deg);}
+    top{transform: rotate(0);}
+}
+.achievement-left{
+    display: flex;
+    justify-content: flex-start;
+}
+.achievement-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.achievement-card{
+    display: flex;
+    margin-bottom:70px;
+}
+.achievement-pic{
+    width: 450px;
+    position: relative;
+    
+}
+.achievement-pic:before{
+    content: "";
+    width: 400px;
+    height: 400px;
+    background-color: rgba(249, 185, 66, 0.665);
+    position: absolute;
+    top:-20%;
+    left:10%;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+.achievement-pic img{
+    width: 100%;
+    z-index: 3;
+}
+.achievement-txt{
+    width: 400px;
+    padding: 20px;
+}
+.achievement-txt h3{
+    font-size: 30px;
+}
+.achievement-txt p{
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px;
+}
+.achievement-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.achievement-btn a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: brown;
+    padding: 10px;
+    display: block;
+}
+.trademark{
+    position: fixed;
+    top: 20%;
+    right: 0;
+    opacity: .2;
+    z-index: -1;
+}
+/* ===============================footer */
+
+
+.footer-total{
+display: flex;
+
+background-color: black;
+}
+.footer{
+width: 100%;
+max-width: 1200px;
+justify-content: space-between;
+align-items: center;
+display: flex;
+color: aliceblue;
+padding: 20px;
+margin: auto;
+}
+.footer .footer-pic{
+display: flex;
+justify-content: flex-start;
+width: 300px;
+}
+.footer .footer-about{
+width: 100%;
+max-width: 1000px;
+display: flex;
+justify-content: flex-end;
+}
+.footer-about ul{
+display: flex;
+flex-direction: column;
+
+}
+
+.footer-about li{
+display: inline-block;
+margin: 10px 0;
+}
+.footer-about ul{
+text-align: center;
+}
+.footer-about ul p{
+font-size: 20px;
+font-weight: 900;
+padding: 10px;
+margin: 10px;
+}
+.footer-about ul a{
+text-decoration: none;
+color: aliceblue;
+margin: 0;
+padding: 0;
+}
+.footer-about ul a:hover{
+color: red;
+}
+.app{
+display: flex;
+justify-content: center;
+text-align: center;
+background-color:#FABB1A; 
+flex-direction: column;
+padding-top: 20px;
+}
+/* <!-- ========================================關於我們 -->  */
+.app{
+border-top: 2px solid white;
+background-color: black;
+}
+.app-pic img{
+margin: 5px 10px;
+}
+.app-adress{
+color: black;
+display: flex;
+justify-content: center;
+}
+.lab{
+    display: none;
+}
+/* <!-- ========================================連結 -->  */
+
+.copy{
+background-color:black;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px 0 80px 0;
+color: aliceblue;  
+font-size: 20px;
+}
+@media screen and (max-width:1024px) {
+    .footer{
+      flex-direction: column;
+    }
+    .footer .footer-about{
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .footer .footer-about nav li{
+        width: 200px;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-about ul p{
+        font-size: 20px;
+        font-weight: 900;
+        padding: 2px;
+        line-height: 2;
+        margin: 0px;
+    }
+    #int-list:checked~.menu-total .nav{
+        left: 0;
+   }
+   #int-list{
+    display: none;
+   }
+    .menu{
+        width: 100%;
+        display: flex;
+        background-color: #FABB1A;
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8;  
+        justify-content: flex-end;
+        
+    }
+    .lab{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        margin: 10px 20px;
+        position: relative;
+        display: block;
+   }
+    .lab::before{
+        content: "";
+        width: 36px;
+        height: 3px;
+        position: absolute;
+        background-color: aliceblue;
+        top: 45%;
+        left: 15%;
+        box-shadow: 0px 13px 0px aliceblue,
+                     0px -13px 0px aliceblue;
+    }
+    .nav{
+        background-color: black;
+        position:fixed;
+        left: -100%;
+        top: 9.5%;
+        height: 100vh;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        padding: 0;  
+    }
+    .nav li{
+        padding: 0;
+        margin: 0;
+    }
+    .nav li:last-child{
+        margin-bottom: 50px;
+    }
+    .nav li a{
+        width: 300px;
+        padding: 20px 0;
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 20px;
+        display: block;
+        font-weight: 900;
+        margin: 0px 0;
+        border-bottom: 1px solid aliceblue
+
+    
+    }
+    .nav .information{
+        width: 130px;
+        position: absolute;
+        top: 0px;
+        right: -60%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .information::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .information li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .information a{
+        padding: 20px;
+        margin: 0;
+    }
+    .nav .coach{
+        width: 130px;
+        position: absolute;
+        top: 0px;
+        right: -60%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .coach::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .coach li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .coach a{
+        padding: 20px;
+        margin: 0;
+    }
+
+    .nav .article{
+        width: 160px;
+        position: absolute;
+        top: 0px;
+        right: -70%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .article::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .article li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .article a{
+        padding: 20px;
+        margin: 0;
+    }
+    .nav .problem{
+        width: 130px;
+        position: absolute;
+        top: 0px;
+        right: -60%;
+        background-color: #090909;
+        display: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        
+    }
+    .nav .problem::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid red;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+        border-right: 30px solid transparent ;
+        position: absolute;
+        left: -70px;
+        transform: rotate(-90deg);
+    }
+    .nav .problem li{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav .problem a{
+        padding: 20px;
+        margin: 0;
+    }
+    .achievement-total{
+        margin-top: 60px;
+    }
+    .achievement-card{
+        width: 100%;
+        padding: 10px;
+    }
+  }
+
+
+/* ========================================copy-rigtt -->    */

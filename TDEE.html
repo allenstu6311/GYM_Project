@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/TDEE.css">
+  
+</head>
+<body>
+  <input type="checkbox" id="int-list">
+    
+
+  <section class="menu-total">
+      <div class="menu">
+          <label for="int-list" class="lab"></label>
+        <ul class="nav">
+          <li><a href="about.html">關於我們</a></li>
+          <li  class="new"><a href="#">最新消息</a>
+          <ul class="information">
+            <li><a href="information.html">購課優惠</a></li>
+            <li><a href="information.html">最新活動</a></li>
+            <li><a href="information.html">挑戰活動</a></li>
+          </ul></li>
+          <li><a href="#">私人教練</a>
+          <ul class="coach">
+            <li><a href="class.html">課程介紹</a></li>
+            <li><a href="achievement.html">會員成果</a></li>
+            <li><a href="coach.html">專業團隊</a></li>
+          </ul></li>
+          <li><a href="#">場館介紹</a>
+          <ul class="article">
+            <li><a href="venue.html">自由重量區</a></li>
+            <li><a href="venue.html">機械式訓練區</a></li>
+            <li><a href="venue.html">有氧教室</a></li>
+            <li><a href="venue.html">瑜珈教室</a></li>
+          </ul></li>
+          <li><a href="free.html">免費體驗</a>
+          </li>
+          <li><a href="#">聯絡我們</a>
+          <ul class="problem">
+            <li><a href="problem.html">聯絡資訊</a></li>
+            <li><a href="problem.html">合作廠商</a></li>
+            <li><a href="problem.html">常見問題</a></li>
+          </ul></li>
+          <li><a href="TDEE.html">TDEE計算機</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- ========================================選單 -->
+    
+<div class="logo">
+  <div class="logo-pic">
+  <a href="index.html"><img src="pic/商標100.png" alt="" width="150" height="130"></a>
+  </div>
+</div>
+<!-- ========================================logo -->
+      
+        <section class="tdee-total">
+            <div class="tdee-title">
+                <div class="line"></div>
+                    <h1>TDEE計算機</h1>
+                <div class="line"></div>
+                </div>
+            <div class="tdee-top">
+                <div class="tdee-computer">
+                    <h2>請填寫基本資訊</h2>
+                    <form action="">
+                        <div>
+                            <label for="gender">性別:</label>
+                            <select id="gender" required>
+                                <option value="">請選擇</option>
+                                <option value="">男</option>
+                                <option value="">女</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="age">年齡:</label>
+                            <input type="text" id="age"  required>
+                           
+                        </div>
+                        <div>
+                            <label for="height">身高:</label>
+                            <input type="text" id="height" required>
+                        </div>
+                        <div>
+                            <label for="weight">體重:</label>
+                            <input type="text" id="weight" required>
+                        </div>
+                        <div>
+                            <label for="time">每周活動次數:</label>
+                            <select name="" id="time" required>
+                                <option value="">請選擇</option>
+                                <option value="">幾乎不動</option>
+                                <option value="">1-3天</option>
+                                <option value="">3-5天</option>
+                                <option value="">6-7天</option>
+                                <option value="">勞動工作</option>
+                            </select>
+                        </div>
+                        <div class="tdee-computer-bth">
+                             <input type="button"value="送出" id="btn">
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="tdee-activity">
+                    <div class="activity-card">
+                        <div class="activity-pic">
+                            <img src="pic/sitting-on-a-chair.png">
+                        </div>
+                        <div class="activity-txt">
+                            <p>身體活動趨於靜態 
+                                (幾乎不運動)
+                                </p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-pic">
+                            <img src="pic/walker.png">
+                        </div>
+                        <div class="activity-txt">
+                            <p>身體活動程度較低 
+                                (每週運動 1-3 天)
+                                </p> 
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-pic">
+                            <img src="pic/普通.png">
+                        </div>
+                        <div class="activity-txt">
+                            <p>身體活動程度正常
+                                (每週運動 3-5 天)
+                                </p> 
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-pic">
+                            <img src="pic/活動程度高.png">
+                        </div>
+                        <div class="activity-txt">
+                            <p>身體活動程度較高
+                                (每週運動 6-7 天)
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-pic">
+                            <img src="pic/激烈.png">
+                        </div>
+                        <div class="activity-txt">
+                            <p>身體活動程度激烈
+                                (長時間運動或體力勞動工作)
+                                </p> 
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-pic">
+                            <img src="pic/bmi.png">
+                        </div>
+                        <div class="activity-txt">
+                            <p>想知道自己的體重是否標準嗎？</p>
+                        </div>
+                    </div>
+                </div> 
+                </div>
+            </div>
+<!--             
+======================================================飲食      -->
+            <div class="tdee-diet">
+                <div class="diet-title">
+                    <h2>飲食查詢</h2>
+                </div>
+                <div class="diet-sheet">
+                        <form action=""> 
+                       <input type="text" name="" id="measurement">
+                        <input type="button" value="查詢">
+                        </form>
+                    
+                    <table>
+                        <tr>
+                            <td rowspan="2">全榖雜糧類 (份)</td>
+                            <td>豆魚蛋肉類 (份)</td>
+                            <td>蔬菜類 (份)</td>
+                            <td rowspan="2">油脂與堅果種子類 (份)</td>  
+                        </tr>
+                        <tr>
+                            <td>乳品類 (份)</td>
+                            <td>水果類 (份)</td>
+                        </tr>
+                    </table>
+                    <div class="diet-post">
+                        <p>※TDEE 是身體一整天下來，包括基礎代謝、活動量、吃東西所消耗的熱量。不同的生活型態需要的熱量也不一樣，當每天攝取的熱量和 TDEE 相等，便達到「熱量平衡」。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- ======================================================廣告 -->
+        <div class="teach-eat-all">
+            <div class="teach-title">
+                <h2>飲食計畫</h2>
+            </div>
+            <div class="teach-eat">
+                <div class="eat-card eat-card-1">
+                    <div class="eat-pic">
+                    <img src="https://ashleexiu.com/wp-content/uploads/2020/11/6-2-1.jpg">
+                </div>
+
+                <div class="eat-article">
+                  <p>沒廚房也沒廚藝？</p>
+
+                    <p>有廚房有廚藝，但沒時間？
+                    </p>
+                    <p>但人家也想要漏斗身材…</p>
+                    <p> 八週外食替妳排好排滿</p>
+                 
+                    <div class="eat-bth">
+                        <a href="#">立即前往</a>
+                    </div>
+                 </div>
+
+
+                    <div class="eat-txt">
+                        <div class="eat-txt-title">
+                            <h3>外食爽歪歪</h3>
+                         </div>
+                        <div class="eat-txt-post">
+                              <p>沒廚房也沒廚藝？</p>
+
+                                <p>有廚房有廚藝，但沒時間？
+                                </p>
+                                <p>但人家也想要漏斗身材…</p>
+                                <p> 八週外食替妳排好排滿</p>
+                             
+                                <div class="eat-bth">
+                                    <a href="#">立即前往</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="eat-card eat-card-2">
+                    <div class="eat-txt">
+                        <div class="eat-txt-title">
+                            <h3>辣美廚娘</h3>
+                         </div>
+                        <div class="eat-txt-post">
+                                <p>每天煩惱要吃什麼才能控制體態，心好累</p>
+                                <p>無色無味水煮餐看到就怕？
+                                </p>
+                                <p>八週自煮，甜點、邪惡料理通通來</p>
+                                <p> 爽吃照樣擁有好身材！</p>
+                                <div class="eat-bth">
+                                    <a href="#">立即前往</a>
+                                </div>
+                        </div>
+                    </div>
+                     <div class="eat-pic">
+                        <img src="https://ashleexiu.com/wp-content/uploads/2020/11/eat-home-1.jpg">
+                     </div>
+
+                     <div class="eat-article">
+                      <p>沒廚房也沒廚藝？</p>
+    
+                        <p>有廚房有廚藝，但沒時間？
+                        </p>
+                        <p>但人家也想要漏斗身材…</p>
+                        <p> 八週外食替妳排好排滿</p>
+                     
+                        <div class="eat-bth">
+                            <a href="#">立即前往</a>
+                        </div>
+                     </div>
+
+                     
+                </div>
+            </div>
+        </div>
+
+        
+        <section class="footer-total">
+          <div class="footer">
+            <div class="footer-pic">
+              <img src="pic/商標100.png" alt="" width="350">
+            </div>
+            <div class="footer-about">
+              <nav>
+                <ul>
+                  <li><p><a href="">關於我們</a></p></li>
+                  <li> <a href="">創立宗旨</a></li>
+                </ul>
+              </nav>
+              <nav>
+                <ul>
+                  <li><p>最新消息</p></li>
+                  <li> <a href="">購課優惠</a></li>
+                  <li> <a href="">最新活動</a></li>
+                  <li> <a href="">挑戰活動</a></li>
+                </ul>
+              </nav>
+              <nav>
+                <ul>
+                  <li><p>私人教練</p></li>
+                  <li> <a href="">課程介紹</a></li>
+                  <li> <a href="">會員成果</a></li>
+                  <li> <a href="">教練介紹</a></li>
+                </ul>
+              </nav>
+              <nav>
+                <ul>
+                  <li><p><a href="">免費體驗</a></p></li>
+                  <li> <a href="">了解內容</a></li>
+                </ul>
+              </nav>
+              <nav>
+                <ul>
+                  <li><p>聯絡我們</p></li>
+                  <li> <a href="">聯絡資訊</a></li>
+                  <li> <a href="">特約廠商</a></li>
+                  <li> <a href="">常見問題</a></li>
+                </ul>
+              </nav>
+              <nav>
+                <ul>
+                  <li><p>TDEE計算機</p></li>
+                  <li> <a href="">計算TDEE</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+         </section>
+          <!-- ========================================關於我們 --> 
+          <div class="app">
+            <div class="app-adress">
+              <p>桃園市桃園區力行路622號</p>
+            </div>
+              <div class="app-pic">
+              <img src="pic/instagram.png" alt="" width="30" height="30">
+              <img src="pic/facebook.png" alt="" width="30" height="30">
+              <img src="pic/line.png" alt="" width="30" height="30">
+              </div>
+             <!-- ========================================連結 -->   
+          </div>
+         <div class="copy">
+          <p>Copyright ©2022 巨猩體能工作室</p>
+        </div>
+           <!-- ========================================copy-rigtt -->   
+        <div class="advertise">
+          <img src="pic/101.png" alt="" width="30" height="30">
+          <img src="pic/100.png" alt="" width="30" height="30">
+          <img src="pic/102.png" alt="" width="30" height="30">
+        </div>
+        <!-- 
+        ========================================ig fb line --> 
+
+      <script src="javascript/TDEE.js">
+                   
+                   
+      
+
+    </script>
+
+    
+
+</body>
+</html>
