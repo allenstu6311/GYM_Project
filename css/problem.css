@@ -336,6 +336,9 @@ padding: 10px 5px;
 .advertise img{
 margin: 10px 0;  
 }
+.contact-font{
+    display: none;
+}
 @media screen and (max-width:1024px) {
     .footer{
       flex-direction: column;
