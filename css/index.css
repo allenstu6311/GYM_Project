@@ -37,7 +37,7 @@ position: relative;
 background-color: rgb(140, 14, 14);
 }
 .nav .information{
-width: 160px;
+width: 140px;
 position: absolute;
 top: 100%;
 background-color: #090909;
@@ -53,7 +53,7 @@ display: block;
 
 }
 .nav .coach{
-width: 160px;
+width: 140px;
 position: absolute;
 top: 100%;
 background-color: #090909;
@@ -64,7 +64,7 @@ display: none;
 display: block;
 }
 .nav .article{
-width: 160px;
+width: 140px;
 position: absolute;
 top: 100%;
 background-color: #090909;
@@ -75,7 +75,7 @@ display: none;
 display: block;
 }
 .nav .free{
-width: 160px;
+width: 140px;
 position: absolute;
 top: 100%;
 background-color: #090909;
@@ -86,7 +86,7 @@ display: none;
 display: block;
 }
 .nav .problem{
-width: 160px;
+width: 140px;
 position: absolute;
 top: 100%;
 background-color: #090909;
@@ -476,6 +476,7 @@ input[type="radio"]{
     display: flex;
     margin: auto;
     position: relative;
+    justify-content: center;
 }
 .chat-title{
     display: flex;
@@ -490,13 +491,12 @@ input[type="radio"]{
 .chat-title h2{
     padding: 10px;
 }
-
 .chat{
     width: 350px;
     box-shadow: 0 0 10px gray;
     padding: 20px;
     background-color: rgb(80, 182, 223);
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px ;
     margin-top: 150px;
   
@@ -525,12 +525,11 @@ input[type="radio"]{
 }
 .user .txt{
     text-align: center;
-    /* display: flex; */
     align-items: center;
     padding: 10px 10px;
     border-radius: 10px;
     position: relative;
-    transform: translateY(-20%);
+    transform: translateY(-10%);
    
     
 }
@@ -550,7 +549,7 @@ input[type="radio"]{
     transform: rotate(280deg);
     position: absolute;
     left: -24px;
-    top: -60%;
+    top: -50%;
    
 }
 .user-man .txt{
