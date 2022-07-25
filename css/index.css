@@ -354,7 +354,7 @@ input[type="radio"]{
     left: 100.5%;
 }
 .student-pic-3{
-    left: 199.6%;
+    left: 186.2%;
 }
 .student-item input[type="radio"]:nth-of-type(1):checked~.student-pic:nth-of-type(1){
     transform: translateX(0);
