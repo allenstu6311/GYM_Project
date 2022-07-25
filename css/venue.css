@@ -598,6 +598,16 @@ body{
     .venue-total{
         margin-top: 60px;
     }
+    .logo-pic{
+        text-align: center;
+        width: 160px;
+        height: 110px;
+        background-color: rgb(238, 238, 238);
+        position: fixed;
+        top: 0;
+        right: 70%;
+        z-index: 10;
+        }
    
    
 }

@@ -110,8 +110,6 @@ top: 0;
 right: 80%;
 z-index: 10;
 position: fixed;
-
-
 }
 .logo-pic img{
 padding-bottom: 20px;
@@ -571,7 +569,19 @@ font-size: 20px;
     .achievement-card{
         width: 100%;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
+    .logo-pic{
+        text-align: center;
+        width: 160px;
+        height: 110px;
+        background-color: rgb(238, 238, 238);
+        position: fixed;
+        top: 0;
+        right: 70%;
+        z-index: 10;
+        }
   }
 
 
