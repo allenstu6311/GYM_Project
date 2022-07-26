@@ -25,4 +25,4 @@ for(let i=0;i<slide.length;i++){
   }
 
 }
-},3500)
+},3000)
